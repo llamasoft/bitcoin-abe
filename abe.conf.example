@@ -167,13 +167,18 @@ template = "
 <body>
     <h1><a href=\"%(dotdot)s%(HOMEPAGE)s\"><img src=\"%(dotdot)s%(STATIC_PATH)slogo64.png\" alt=\"Abe logo\" /></a> %(h1)s </h1>
     %(body)s
-    <p style=\"font-size: smaller\">
+    <p style=\"font-size: smaller; text-align: center;\">
+        <br />
         <span style=\"font-style: italic\">
-            Powered by <a href=\"%(ABE_URL)s\">%(APPNAME)s</a>
+            Powered by <a href=\"%(ABE_URL)s\">%(APPNAME)s</a><br /><br />
         </span>
-        Donations appreciated! <br />
+        <b><u>Donations appreciated!</u></b> <br />
         <b>BTC:</b> %(DONATIONS_BTC)s <br />
         <b>SRC:</b> %(DONATIONS_SRC)s <br />
+        <br /><br />
+        <b><i>Please do not bot this site!</i></b><br />
+        If you'd like a copy of the database, it's <a href='/securecoin.sqlite'>available here</a> in SQLite format.<br />
+        It is updated once per hour.
     </p>
 </body>
 </html>
