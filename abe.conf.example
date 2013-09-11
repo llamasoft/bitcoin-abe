@@ -152,7 +152,7 @@ template_vars += {
     "CONTENT_TYPE": "text/html; charset=utf-8",
     "APPNAME": "Quarkcoin-Abe",
     "DONATIONS_BTC": "1E2egHUcLDAmcxcqZqpL18TPLx9Xj1akcV",
-    "DONATIONS_SRC": "sMCD2p55fkPD6s8EzDrL7vVp8EYqPkJ6mo"
+    "DONATIONS_SRC": "sK1kaGUwqQhu3rGwkvoUuUBvFVWs1wDSwM"
 }
 template_vars += { "HOMEPAGE": "chain/SecureCoin" }
 template = "
@@ -280,4 +280,5 @@ address_history_rows_max = 500
 # "default" to let Abe choose.  The "loader" specified in a "datadir"
 # entry takes precedence over "default-loader".
 #
-#default-loader = default
+# Because we've disabled sanity checks, only allow RPC as an info source
+default-loader = "rpc"
