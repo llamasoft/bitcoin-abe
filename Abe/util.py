@@ -65,13 +65,13 @@ def calculate_target(nBits):
     return (nBits & 0xffffff) << (8 * ((nBits >> 24) - 3))
 
 def target_to_difficulty(target):
-    return ((1 << 224) - 1) * 1000 / (target + 1) / 1000.0
+    return ((1 << 232) - 1) * 1000 / (target + 1) / 1000.0
 
 def calculate_difficulty(nBits):
     return target_to_difficulty(calculate_target(nBits))
 
 def work_to_difficulty(work):
-    return work * ((1 << 224) - 1) * 1000 / (1 << 256) / 1000.0
+    return work * ((1 << 232) - 1) * 1000 / (1 << 256) / 1000.0
 
 def target_to_work(target):
     # XXX will this round using the same rules as C++ Bitcoin?
