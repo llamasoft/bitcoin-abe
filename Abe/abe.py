@@ -39,9 +39,9 @@ import base58
 
 __version__ = version.__version__
 
-ABE_APPNAME = "Abe"
+ABE_APPNAME = "Securecoin-Abe"
 ABE_VERSION = __version__
-ABE_URL = 'https://github.com/llamasoft/quarkcoin-abe'
+ABE_URL = 'https://github.com/llamasoft/securecoin-abe'
 
 COPYRIGHT_YEARS = '2011'
 COPYRIGHT = "Abe developers"

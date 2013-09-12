@@ -150,7 +150,7 @@ binary-type hex
 # Primitive template system until I separate view from controller.
 template_vars += {
     "CONTENT_TYPE": "text/html; charset=utf-8",
-    "APPNAME": "Quarkcoin-Abe",
+    "APPNAME": "Securecoin-Abe",
     "DONATIONS_BTC": "1E2egHUcLDAmcxcqZqpL18TPLx9Xj1akcV",
     "DONATIONS_SRC": "sK1kaGUwqQhu3rGwkvoUuUBvFVWs1wDSwM"
 }
